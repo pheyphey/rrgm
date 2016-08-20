@@ -1,0 +1,76 @@
+c:\users\lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\bin\Debug\RRGM.exe.config
+c:\users\lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\bin\Debug\RRGM.exe
+c:\users\lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\bin\Debug\RRGM.pdb
+c:\users\lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\obj\Debug\RRGM.csprojResolveAssemblyReference.cache
+c:\users\lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\obj\Debug\RRGM.Form1.resources
+c:\users\lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\obj\Debug\RRGM.Properties.Resources.resources
+c:\users\lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\obj\Debug\RRGM.csproj.GenerateResource.Cache
+c:\users\lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\obj\Debug\RRGM.exe
+c:\users\lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\obj\Debug\RRGM.pdb
+C:\Users\Lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\obj\Debug\RRGM.frm_inquiry.resources
+C:\Users\Lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\obj\Debug\RRGM.frm_login.resources
+C:\Users\Lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\obj\Debug\RRGM.frm_FileMaintenance.resources
+C:\Users\Lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\obj\Debug\RRGM.frmAddUser.resources
+C:\Users\Lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\obj\Debug\RRGM.frmAddSup.resources
+C:\Users\Lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\obj\Debug\RRGM.frmAddInv.resources
+C:\Users\Lemuel\documents\visual studio 2013\Projects\RRGM\RRGM\obj\Debug\RRGM.frmAddCustomer.resources
+C:\Users\Jumbo\Desktop\RRGM\RRGM\bin\Debug\RRGM.exe.config
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.exe
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.pdb
+C:\Users\Jumbo\Desktop\RRGM\RRGM\bin\Debug\RRGM.exe
+C:\Users\Jumbo\Desktop\RRGM\RRGM\bin\Debug\RRGM.pdb
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.csprojResolveAssemblyReference.cache
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.Form1.resources
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.frmAddCustomer.resources
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.frmAddInv.resources
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.frmAddSup.resources
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.frmAddUser.resources
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.frm_FileMaintenance.resources
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.frm_inquiry.resources
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.frm_login.resources
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.frm_Purchase.resources
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.frm_SalesTrans.resources
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.Properties.Resources.resources
+C:\Users\Jumbo\Desktop\RRGM\RRGM\obj\Debug\RRGM.csproj.GenerateResource.Cache
+C:\Users\Jumbo\Desktop\RRGM\RRGM\bin\Debug\MySql.Data.dll
+F:\RRGM\RRGM\bin\Debug\RRGM.exe.config
+F:\RRGM\RRGM\obj\Debug\RRGM.exe
+F:\RRGM\RRGM\obj\Debug\RRGM.pdb
+F:\RRGM\RRGM\bin\Debug\RRGM.exe
+F:\RRGM\RRGM\bin\Debug\RRGM.pdb
+F:\RRGM\RRGM\bin\Debug\MySql.Data.dll
+F:\RRGM\RRGM\obj\Debug\RRGM.csprojResolveAssemblyReference.cache
+F:\RRGM\RRGM\obj\Debug\RRGM.Form1.resources
+F:\RRGM\RRGM\obj\Debug\RRGM.frmAddCustomer.resources
+F:\RRGM\RRGM\obj\Debug\RRGM.frmAddInv.resources
+F:\RRGM\RRGM\obj\Debug\RRGM.frmAddSup.resources
+F:\RRGM\RRGM\obj\Debug\RRGM.frmAddUser.resources
+F:\RRGM\RRGM\obj\Debug\RRGM.frm_FileMaintenance.resources
+F:\RRGM\RRGM\obj\Debug\RRGM.frm_inquiry.resources
+F:\RRGM\RRGM\obj\Debug\RRGM.frm_login.resources
+F:\RRGM\RRGM\obj\Debug\RRGM.frm_Purchase.resources
+F:\RRGM\RRGM\obj\Debug\RRGM.frm_SalesTrans.resources
+F:\RRGM\RRGM\obj\Debug\RRGM.Properties.Resources.resources
+F:\RRGM\RRGM\obj\Debug\RRGM.csproj.GenerateResource.Cache
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\bin\Debug\RRGM.exe.config
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.exe
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.pdb
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\bin\Debug\RRGM.exe
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\bin\Debug\RRGM.pdb
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\bin\Debug\MySql.Data.dll
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.csprojResolveAssemblyReference.cache
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.Form1.resources
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frmAddCustomer.resources
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frmAddInv.resources
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frmAddSup.resources
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frmAddUser.resources
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frm_FileMaintenance.resources
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frm_inquiry.resources
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frm_login.resources
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frm_Purchase.resources
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frm_SalesTrans.resources
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.Properties.Resources.resources
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.csproj.GenerateResource.Cache
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frmEditUser.resources
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frmEditCustomer.resources
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frmEditSupp.resources
