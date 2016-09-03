@@ -50,9 +50,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(25, 74);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 24);
+            this.label1.Size = new System.Drawing.Size(71, 24);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Username";
+            this.label1.Text = "User ID";
             // 
             // label2
             // 
@@ -80,6 +80,7 @@
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.Size = new System.Drawing.Size(190, 29);
             this.txtpassword.TabIndex = 4;
+            this.txtpassword.UseSystemPasswordChar = true;
             // 
             // pictureBox4
             // 

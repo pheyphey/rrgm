@@ -84,7 +84,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(83, 23);
+            this.label1.Location = new System.Drawing.Point(169, 18);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(168, 31);
             this.label1.TabIndex = 18;
@@ -221,7 +221,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::RRGM.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(36, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(122, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 33);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -249,7 +249,7 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtAddress);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(80, 102);
+            this.groupBox1.Location = new System.Drawing.Point(166, 97);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(643, 189);
             this.groupBox1.TabIndex = 39;
@@ -261,6 +261,7 @@
             this.txtSuppID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSuppID.Location = new System.Drawing.Point(131, 29);
             this.txtSuppID.Name = "txtSuppID";
+            this.txtSuppID.ReadOnly = true;
             this.txtSuppID.Size = new System.Drawing.Size(184, 24);
             this.txtSuppID.TabIndex = 39;
             // 
@@ -299,7 +300,7 @@
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Image = global::RRGM.Properties.Resources.save__1_;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.Location = new System.Drawing.Point(303, 492);
+            this.btnSave.Location = new System.Drawing.Point(389, 487);
             this.btnSave.Name = "btnSave";
             this.btnSave.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnSave.Size = new System.Drawing.Size(92, 36);
@@ -314,7 +315,7 @@
             this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Image = global::RRGM.Properties.Resources.error;
-            this.btnCancel.Location = new System.Drawing.Point(435, 492);
+            this.btnCancel.Location = new System.Drawing.Point(521, 487);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(92, 36);
             this.btnCancel.TabIndex = 41;
@@ -326,7 +327,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 57);
+            this.label8.Location = new System.Drawing.Point(98, 52);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(799, 13);
             this.label8.TabIndex = 42;
@@ -360,7 +361,7 @@
             this.groupBox2.Controls.Add(this.txtPaymentTerm);
             this.groupBox2.Controls.Add(this.label21);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(80, 297);
+            this.groupBox2.Location = new System.Drawing.Point(166, 292);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(643, 165);
             this.groupBox2.TabIndex = 49;
@@ -562,7 +563,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 569);
+            this.ClientSize = new System.Drawing.Size(959, 547);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnCancel);
@@ -571,7 +572,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(263, 123);
+            this.Location = new System.Drawing.Point(190, 200);
             this.Name = "frmAddSup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Load += new System.EventHandler(this.frmAddSup_Load);

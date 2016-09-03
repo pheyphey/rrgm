@@ -24,11 +24,19 @@ namespace RRGM
         
         private void frm_FileMaintenance_Load(object sender, EventArgs e)
         {
+            this.Opacity = 0.1;
+            timer1.Start();
+
+            timer2.Start();
+            label12.Text = DateTime.Now.ToLongDateString();
+            label13.Text = DateTime.Now.ToShortTimeString();
+
             GBusers.Visible = true;
             groupBox3.Visible = false;
             groupBox4.Visible = false;
             groupBox5.Visible = false;
             GBcustomers.Visible = false;
+            
         }
 
         private void pictureBox3_MouseLeave(object sender, EventArgs e)
@@ -254,6 +262,21 @@ namespace RRGM
             {
                 MessageBox.Show("No Records found.");
             }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            this.Opacity += .05;
+            if (this.Opacity == 1)
+            {
+                timer1.Stop();
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            label13.Text = DateTime.Now.ToShortTimeString();
+            timer2.Start();
         }
     }
 }

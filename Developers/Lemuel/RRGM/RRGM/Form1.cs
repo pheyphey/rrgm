@@ -56,7 +56,7 @@ namespace RRGM
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            frm_inquiry inquiry = new frm_inquiry();
+            frm_Inquiryy inquiry = new frm_Inquiryy();
             inquiry.Show();
         }
 
@@ -68,7 +68,7 @@ namespace RRGM
         private void pictureBox12_Click(object sender, EventArgs e)
         {
             frm_FileMaintenance fm = new frm_FileMaintenance();
-            fm.Show();
+            fm.Show(this);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -177,19 +177,9 @@ namespace RRGM
             SalesTrans.Show();
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
-        }
 
-        private void label6_MouseEnter(object sender, EventArgs e)
-        {
-            label6.BackColor = Color.Gainsboro;
-        }
-
-        private void label6_MouseLeave(object sender, EventArgs e)
-        {
-            label6.BackColor = Color.Transparent;
         }
     }
 }

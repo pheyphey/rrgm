@@ -87,7 +87,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(11, 55);
+            this.label8.Location = new System.Drawing.Point(84, 56);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(799, 13);
             this.label8.TabIndex = 45;
@@ -99,7 +99,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(82, 21);
+            this.label1.Location = new System.Drawing.Point(155, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(187, 31);
             this.label1.TabIndex = 43;
@@ -108,7 +108,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::RRGM.Properties.Resources.user__3_;
-            this.pictureBox1.Location = new System.Drawing.Point(35, 19);
+            this.pictureBox1.Location = new System.Drawing.Point(108, 20);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 33);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -120,7 +120,7 @@
             this.btnCancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnCancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.Image = global::RRGM.Properties.Resources.error;
-            this.btnCancel.Location = new System.Drawing.Point(435, 497);
+            this.btnCancel.Location = new System.Drawing.Point(508, 498);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(92, 36);
             this.btnCancel.TabIndex = 48;
@@ -136,7 +136,7 @@
             this.btnSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Image = global::RRGM.Properties.Resources.save__1_;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.Location = new System.Drawing.Point(292, 497);
+            this.btnSave.Location = new System.Drawing.Point(365, 498);
             this.btnSave.Name = "btnSave";
             this.btnSave.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnSave.Size = new System.Drawing.Size(92, 36);
@@ -167,7 +167,7 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtAddress);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(55, 111);
+            this.groupBox1.Location = new System.Drawing.Point(128, 112);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(348, 371);
             this.groupBox1.TabIndex = 46;
@@ -189,6 +189,7 @@
             this.txtCustID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCustID.Location = new System.Drawing.Point(130, 30);
             this.txtCustID.Name = "txtCustID";
+            this.txtCustID.ReadOnly = true;
             this.txtCustID.Size = new System.Drawing.Size(95, 24);
             this.txtCustID.TabIndex = 38;
             // 
@@ -360,7 +361,7 @@
             this.groupBox2.Controls.Add(this.txtPaymentTerm);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(409, 111);
+            this.groupBox2.Location = new System.Drawing.Point(482, 112);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(369, 371);
             this.groupBox2.TabIndex = 47;
@@ -561,7 +562,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(840, 569);
+            this.ClientSize = new System.Drawing.Size(959, 547);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
@@ -570,7 +571,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(263, 123);
+            this.Location = new System.Drawing.Point(190, 200);
             this.Name = "frmAddCustomer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Add Customer";

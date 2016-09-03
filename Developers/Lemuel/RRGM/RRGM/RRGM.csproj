@@ -107,11 +107,11 @@
     <Compile Include="frm_FileMaintenance.Designer.cs">
       <DependentUpon>frm_FileMaintenance.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_inquiry.cs">
+    <Compile Include="frm_Inquiryy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_inquiry.Designer.cs">
-      <DependentUpon>frm_inquiry.cs</DependentUpon>
+    <Compile Include="frm_Inquiryy.Designer.cs">
+      <DependentUpon>frm_Inquiryy.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_login.cs">
       <SubType>Form</SubType>
@@ -161,8 +161,8 @@
     <EmbeddedResource Include="frm_FileMaintenance.resx">
       <DependentUpon>frm_FileMaintenance.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_inquiry.resx">
-      <DependentUpon>frm_inquiry.cs</DependentUpon>
+    <EmbeddedResource Include="frm_Inquiryy.resx">
+      <DependentUpon>frm_Inquiryy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_login.resx">
       <DependentUpon>frm_login.cs</DependentUpon>
@@ -372,6 +372,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grey_close_x2.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power-Shutdown1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power-Shutdown11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power-Shutdown2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\previous %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full-items-inside-a-shopping-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\specialist-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\market-store.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logistics-delivery-truck-in-movement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\choice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-cart.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
