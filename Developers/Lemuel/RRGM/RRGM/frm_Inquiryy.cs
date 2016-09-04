@@ -12,9 +12,13 @@ namespace RRGM
 {
     public partial class frm_Inquiryy : Form
     {
+        ClassListView listview = new ClassListView();
         public frm_Inquiryy()
         {
             InitializeComponent();
+            listview.lvwCustomer(lvwCustList);
+            listview.lvwSupplier(lvwVendorList);
+            listview.lvwItems(lvwItemList);
         }
 
         private void pictureBox8_Click(object sender, EventArgs e)

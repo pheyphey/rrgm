@@ -74,3 +74,4 @@ C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.f
 C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frmEditCustomer.resources
 C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frmEditSupp.resources
 C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frm_Inquiryy.resources
+C:\Users\Lemuel\Documents\Visual Studio 2015\Projects\RRGM\RRGM\obj\Debug\RRGM.frmEditInv.resources

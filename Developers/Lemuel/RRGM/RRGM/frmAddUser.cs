@@ -38,7 +38,7 @@ namespace RRGM
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (txtFirstname.Text=="" || txtLastname.Text=="" || txtMiddlename.Text=="" || txtUserID.Text=="" || txtPassword.Text == "" || txtPosition.Text=="")
+            if (txtFirstname.Text=="" || txtLastname.Text=="" || txtMiddlename.Text=="" || txtUserID.Text=="" || txtPassword.Text == "" || txtPosition.Text=="" || txtPosition.Text == "Select a Position..")
             {
                 MessageBox.Show("Please fill out the following fields.", "System", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }

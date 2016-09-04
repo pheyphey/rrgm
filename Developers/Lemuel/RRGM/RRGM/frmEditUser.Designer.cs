@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtPosition = new System.Windows.Forms.TextBox();
             this.txtMiddlename = new System.Windows.Forms.TextBox();
             this.txtFirstname = new System.Windows.Forms.TextBox();
             this.txtLastname = new System.Windows.Forms.TextBox();
@@ -47,6 +46,7 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.txtPosition = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,14 +59,6 @@
             this.label8.TabIndex = 60;
             this.label8.Text = "_________________________________________________________________________________" +
     "___________________________________________________";
-            // 
-            // txtPosition
-            // 
-            this.txtPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPosition.Location = new System.Drawing.Point(576, 305);
-            this.txtPosition.Name = "txtPosition";
-            this.txtPosition.Size = new System.Drawing.Size(202, 24);
-            this.txtPosition.TabIndex = 56;
             // 
             // txtMiddlename
             // 
@@ -99,6 +91,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(202, 24);
             this.txtPassword.TabIndex = 52;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUserID
             // 
@@ -226,16 +219,29 @@
             this.timer1.Interval = 20;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // txtPosition
+            // 
+            this.txtPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPosition.FormattingEnabled = true;
+            this.txtPosition.Items.AddRange(new object[] {
+            "Admin",
+            "Cashier"});
+            this.txtPosition.Location = new System.Drawing.Point(577, 305);
+            this.txtPosition.Name = "txtPosition";
+            this.txtPosition.Size = new System.Drawing.Size(201, 24);
+            this.txtPosition.TabIndex = 61;
+            this.txtPosition.Text = "Select a Position..";
+            // 
             // frmEditUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 547);
+            this.Controls.Add(this.txtPosition);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.txtPosition);
             this.Controls.Add(this.txtMiddlename);
             this.Controls.Add(this.txtFirstname);
             this.Controls.Add(this.txtLastname);
@@ -267,7 +273,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.TextBox txtPosition;
         private System.Windows.Forms.TextBox txtMiddlename;
         private System.Windows.Forms.TextBox txtFirstname;
         private System.Windows.Forms.TextBox txtLastname;
@@ -281,5 +286,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ComboBox txtPosition;
     }
 }

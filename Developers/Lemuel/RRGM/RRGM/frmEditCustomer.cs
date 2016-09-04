@@ -86,41 +86,6 @@ namespace RRGM
             set { txtemail.Text = value; }
         }
 
-        public string SALEMAN
-        {
-            set { txtsalesman.Text = value; }
-        }
-
-        public string PAYMENTTERM
-        {
-            set { txtPaymentTerm.Text = value; }
-        }
-
-        public string PAYMENTMETHOD
-        {
-            set { txtPaymentMethod.Text = value; }
-        }
-
-        public string BANKACCOUNT
-        {
-            set { txtBankAccountNum.Text = value; }
-        }
-
-        public string CREDITLIMIT
-        {
-            set { txtCreditLimit.Text = value; }
-        }
-
-        public string OPENBALANCE
-        {
-            set { txtOpeningBalance.Text = value; }
-        }
-
-        public string CURRENTBALANCE
-        {
-            set { txtCreditStatus.Text = value; }
-        }
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             structCUST.CUSTID = txtCustID.Text;
@@ -132,13 +97,6 @@ namespace RRGM
             structCUST.PHONE = txttele1.Text;
             structCUST.FAX = txtFax.Text;
             structCUST.EMAIL = txtemail.Text;
-            structCUST.SALEMAN = txtsalesman.Text;
-            structCUST.PAYMENTTERM = txtPaymentTerm.Text;
-            structCUST.PAYMENTMETHOD = txtPaymentMethod.Text;
-            structCUST.BANKACCOUNT = txtBankAccountNum.Text;
-            structCUST.CREDITLIMIT = txtCreditLimit.Text;
-            structCUST.OPENBALANCE = txtOpeningBalance.Text;
-            structCUST.CURRENTBALANCE = txtCreditStatus.Text;
             fmcust.Update(structCUST);
 
             lvwrefresh.RefreshUserListView();

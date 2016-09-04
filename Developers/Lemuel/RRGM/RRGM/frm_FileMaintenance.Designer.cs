@@ -56,9 +56,22 @@
             this.cmbSearchBy = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.lvwItemList = new System.Windows.Forms.ListView();
+            this.columnHeader81 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader82 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader83 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader84 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader85 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader86 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader87 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader88 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader89 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader90 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader91 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader92 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader93 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.lvwItems = new System.Windows.Forms.ListView();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -73,13 +86,6 @@
             this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader24 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader25 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader26 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader27 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader28 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader29 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader30 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader31 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader32 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -105,13 +111,6 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -437,9 +436,9 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.lvwItemList);
             this.groupBox3.Controls.Add(this.button3);
             this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.lvwItems);
             this.groupBox3.Controls.Add(this.textBox1);
             this.groupBox3.Controls.Add(this.comboBox1);
             this.groupBox3.Controls.Add(this.label6);
@@ -450,6 +449,98 @@
             this.groupBox3.TabIndex = 6;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Items";
+            // 
+            // lvwItemList
+            // 
+            this.lvwItemList.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader81,
+            this.columnHeader82,
+            this.columnHeader83,
+            this.columnHeader84,
+            this.columnHeader85,
+            this.columnHeader86,
+            this.columnHeader87,
+            this.columnHeader88,
+            this.columnHeader89,
+            this.columnHeader90,
+            this.columnHeader91,
+            this.columnHeader92,
+            this.columnHeader93});
+            this.lvwItemList.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvwItemList.FullRowSelect = true;
+            this.lvwItemList.GridLines = true;
+            this.lvwItemList.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.lvwItemList.Location = new System.Drawing.Point(3, 71);
+            this.lvwItemList.Name = "lvwItemList";
+            this.lvwItemList.Size = new System.Drawing.Size(759, 419);
+            this.lvwItemList.TabIndex = 23;
+            this.lvwItemList.UseCompatibleStateImageBehavior = false;
+            this.lvwItemList.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader81
+            // 
+            this.columnHeader81.Text = "Item ID";
+            this.columnHeader81.Width = 115;
+            // 
+            // columnHeader82
+            // 
+            this.columnHeader82.Text = "Decsription";
+            this.columnHeader82.Width = 115;
+            // 
+            // columnHeader83
+            // 
+            this.columnHeader83.Text = "Price";
+            this.columnHeader83.Width = 115;
+            // 
+            // columnHeader84
+            // 
+            this.columnHeader84.Text = "Last Unit Cost";
+            this.columnHeader84.Width = 115;
+            // 
+            // columnHeader85
+            // 
+            this.columnHeader85.Text = "Item Type";
+            this.columnHeader85.Width = 115;
+            // 
+            // columnHeader86
+            // 
+            this.columnHeader86.Text = "Location";
+            this.columnHeader86.Width = 115;
+            // 
+            // columnHeader87
+            // 
+            this.columnHeader87.Text = "Safe Level";
+            this.columnHeader87.Width = 115;
+            // 
+            // columnHeader88
+            // 
+            this.columnHeader88.Text = "Critical Level";
+            this.columnHeader88.Width = 115;
+            // 
+            // columnHeader89
+            // 
+            this.columnHeader89.Text = "Reorder Level";
+            this.columnHeader89.Width = 115;
+            // 
+            // columnHeader90
+            // 
+            this.columnHeader90.Text = "Quantity Hand";
+            this.columnHeader90.Width = 115;
+            // 
+            // columnHeader91
+            // 
+            this.columnHeader91.Text = "Quantity SO";
+            this.columnHeader91.Width = 115;
+            // 
+            // columnHeader92
+            // 
+            this.columnHeader92.Text = "Quantity PO";
+            this.columnHeader92.Width = 115;
+            // 
+            // columnHeader93
+            // 
+            this.columnHeader93.Text = "Supplier ID";
+            this.columnHeader93.Width = 115;
             // 
             // button3
             // 
@@ -462,6 +553,7 @@
             this.button3.Text = "Edit Item";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -475,16 +567,6 @@
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // lvwItems
-            // 
-            this.lvwItems.FullRowSelect = true;
-            this.lvwItems.GridLines = true;
-            this.lvwItems.Location = new System.Drawing.Point(6, 68);
-            this.lvwItems.Name = "lvwItems";
-            this.lvwItems.Size = new System.Drawing.Size(756, 434);
-            this.lvwItems.TabIndex = 9;
-            this.lvwItems.UseCompatibleStateImageBehavior = false;
             // 
             // textBox1
             // 
@@ -541,14 +623,7 @@
             this.columnHeader22,
             this.columnHeader23,
             this.columnHeader24,
-            this.columnHeader25,
-            this.columnHeader26,
-            this.columnHeader27,
-            this.columnHeader28,
-            this.columnHeader29,
-            this.columnHeader30,
-            this.columnHeader31,
-            this.columnHeader32});
+            this.columnHeader25});
             this.lvwSupplier.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvwSupplier.FullRowSelect = true;
             this.lvwSupplier.GridLines = true;
@@ -604,41 +679,6 @@
             // 
             this.columnHeader25.Text = "E-mail";
             this.columnHeader25.Width = 115;
-            // 
-            // columnHeader26
-            // 
-            this.columnHeader26.Text = "Sales Man";
-            this.columnHeader26.Width = 115;
-            // 
-            // columnHeader27
-            // 
-            this.columnHeader27.Text = "Payment term";
-            this.columnHeader27.Width = 115;
-            // 
-            // columnHeader28
-            // 
-            this.columnHeader28.Text = "Payment Method";
-            this.columnHeader28.Width = 115;
-            // 
-            // columnHeader29
-            // 
-            this.columnHeader29.Text = "Bank Account";
-            this.columnHeader29.Width = 115;
-            // 
-            // columnHeader30
-            // 
-            this.columnHeader30.Text = "Credit Limit";
-            this.columnHeader30.Width = 115;
-            // 
-            // columnHeader31
-            // 
-            this.columnHeader31.Text = "Open Balance";
-            this.columnHeader31.Width = 115;
-            // 
-            // columnHeader32
-            // 
-            this.columnHeader32.Text = "Current Balance";
-            this.columnHeader32.Width = 115;
             // 
             // button5
             // 
@@ -797,14 +837,7 @@
             this.columnHeader6,
             this.columnHeader7,
             this.columnHeader8,
-            this.columnHeader9,
-            this.columnHeader10,
-            this.columnHeader11,
-            this.columnHeader12,
-            this.columnHeader13,
-            this.columnHeader14,
-            this.columnHeader15,
-            this.columnHeader16});
+            this.columnHeader9});
             this.lvwCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lvwCustomer.FullRowSelect = true;
             this.lvwCustomer.GridLines = true;
@@ -860,41 +893,6 @@
             // 
             this.columnHeader9.Text = "E-mail";
             this.columnHeader9.Width = 115;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "Sales Man";
-            this.columnHeader10.Width = 115;
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "Payment term";
-            this.columnHeader11.Width = 115;
-            // 
-            // columnHeader12
-            // 
-            this.columnHeader12.Text = "Payment Method";
-            this.columnHeader12.Width = 115;
-            // 
-            // columnHeader13
-            // 
-            this.columnHeader13.Text = "Bank Account";
-            this.columnHeader13.Width = 115;
-            // 
-            // columnHeader14
-            // 
-            this.columnHeader14.Text = "Credit Limit";
-            this.columnHeader14.Width = 115;
-            // 
-            // columnHeader15
-            // 
-            this.columnHeader15.Text = "Open Balance";
-            this.columnHeader15.Width = 115;
-            // 
-            // columnHeader16
-            // 
-            this.columnHeader16.Text = "Current Balance";
-            this.columnHeader16.Width = 115;
             // 
             // button9
             // 
@@ -1121,7 +1119,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ListView lvwItems;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label6;
@@ -1166,13 +1163,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private System.Windows.Forms.ColumnHeader columnHeader9;
-        private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.ColumnHeader columnHeader11;
-        private System.Windows.Forms.ColumnHeader columnHeader12;
-        private System.Windows.Forms.ColumnHeader columnHeader13;
-        private System.Windows.Forms.ColumnHeader columnHeader14;
-        private System.Windows.Forms.ColumnHeader columnHeader15;
-        private System.Windows.Forms.ColumnHeader columnHeader16;
         private System.Windows.Forms.ListView lvwSupplier;
         private System.Windows.Forms.ColumnHeader columnHeader17;
         private System.Windows.Forms.ColumnHeader columnHeader18;
@@ -1183,13 +1173,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader23;
         private System.Windows.Forms.ColumnHeader columnHeader24;
         private System.Windows.Forms.ColumnHeader columnHeader25;
-        private System.Windows.Forms.ColumnHeader columnHeader26;
-        private System.Windows.Forms.ColumnHeader columnHeader27;
-        private System.Windows.Forms.ColumnHeader columnHeader28;
-        private System.Windows.Forms.ColumnHeader columnHeader29;
-        private System.Windows.Forms.ColumnHeader columnHeader30;
-        private System.Windows.Forms.ColumnHeader columnHeader31;
-        private System.Windows.Forms.ColumnHeader columnHeader32;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
@@ -1198,5 +1181,19 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.ListView lvwItemList;
+        private System.Windows.Forms.ColumnHeader columnHeader81;
+        private System.Windows.Forms.ColumnHeader columnHeader82;
+        private System.Windows.Forms.ColumnHeader columnHeader83;
+        private System.Windows.Forms.ColumnHeader columnHeader84;
+        private System.Windows.Forms.ColumnHeader columnHeader85;
+        private System.Windows.Forms.ColumnHeader columnHeader86;
+        private System.Windows.Forms.ColumnHeader columnHeader87;
+        private System.Windows.Forms.ColumnHeader columnHeader88;
+        private System.Windows.Forms.ColumnHeader columnHeader89;
+        private System.Windows.Forms.ColumnHeader columnHeader90;
+        private System.Windows.Forms.ColumnHeader columnHeader91;
+        private System.Windows.Forms.ColumnHeader columnHeader92;
+        private System.Windows.Forms.ColumnHeader columnHeader93;
     }
 }

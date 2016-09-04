@@ -46,7 +46,7 @@ namespace RRGM
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (txtAddress.Text == "" || txtBankAccountNum.Text == "" || txtCreditLimit.Text == "" || txtCreditStatus.Text == "" || txtemail.Text == "" || txtFax.Text == "" || txtFirstname.Text == "" || txtLastname.Text == "" || txtMiddlename.Text == "" || txtOpeningBalance.Text == "" || txtPaymentMethod.Text == "" || txtPaymentTerm.Text == "" || txtSaleDiscount.Text == "" || txtsalesman.Text == "" || txtStorename.Text == "" || txttele1.Text == "" || txttele1.Text == "")
+            if (txtAddress.Text == "" || txtemail.Text == "" || txtFax.Text == "" || txtFirstname.Text == "" || txtLastname.Text == "" || txtMiddlename.Text == "" || txtStorename.Text == "" || txttele1.Text == "" || txttele1.Text == "")
             {
                 MessageBox.Show("Please fill out the following fields.", "System", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -61,13 +61,6 @@ namespace RRGM
                 _structCUST.PHONE = txttele1.Text;
                 _structCUST.FAX = txtFax.Text;
                 _structCUST.EMAIL = txtemail.Text;
-                _structCUST.SALEMAN = txtsalesman.Text;
-                _structCUST.PAYMENTTERM = txtPaymentTerm.Text;
-                _structCUST.PAYMENTMETHOD = txtPaymentMethod.Text;
-                _structCUST.BANKACCOUNT = txtBankAccountNum.Text;
-                _structCUST.CREDITLIMIT = txtCreditLimit.Text;
-                _structCUST.OPENBALANCE = txtOpeningBalance.Text;
-                _structCUST.CURRENTBALANCE = txtCreditStatus.Text;
                 _fmCUST.add(_structCUST);
 
                 _lvw.RefreshUserListView();
