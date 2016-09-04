@@ -1,0 +1,9 @@
+c:\users\lemuel\documents\visual studio 2013\Projects\sampol\sampol\bin\Debug\sampol.exe.config
+C:\Users\Lemuel\documents\visual studio 2013\Projects\sampol\sampol\bin\Debug\sampol.exe
+C:\Users\Lemuel\documents\visual studio 2013\Projects\sampol\sampol\bin\Debug\sampol.pdb
+C:\Users\Lemuel\documents\visual studio 2013\Projects\sampol\sampol\obj\Debug\sampol.csprojResolveAssemblyReference.cache
+C:\Users\Lemuel\documents\visual studio 2013\Projects\sampol\sampol\obj\Debug\sampol.Form1.resources
+C:\Users\Lemuel\documents\visual studio 2013\Projects\sampol\sampol\obj\Debug\sampol.Properties.Resources.resources
+C:\Users\Lemuel\documents\visual studio 2013\Projects\sampol\sampol\obj\Debug\sampol.csproj.GenerateResource.Cache
+C:\Users\Lemuel\documents\visual studio 2013\Projects\sampol\sampol\obj\Debug\sampol.exe
+C:\Users\Lemuel\documents\visual studio 2013\Projects\sampol\sampol\obj\Debug\sampol.pdb
