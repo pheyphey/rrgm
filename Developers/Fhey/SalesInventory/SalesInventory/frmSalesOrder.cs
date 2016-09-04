@@ -7,18 +7,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace SalesInventory
 {
-    public partial class frmSalesTrans : Form
+    public partial class frmSalesOrder : Form
     {
         ClassListView listview = new ClassListView();
+        private MySqlCommand cmd;
+        private MySqlDataReader read;
+
         int qty;
-        public frmSalesTrans()
+        double prc;
+        public frmSalesOrder()
         {
             InitializeComponent();
-            listview.lvwTransaction_Items(lvwItemList);
-           
+            listview.lvwItemPO(lvwItemList);
+            SupplierList();
+            timerQuantity.Start();
+        }
+
+        public void SupplierList()
+        {
+            if (!Connection.IsOpen)
+                Connection.Open();
+            string select = string.Format("SELECT * from tbl_supplier");
+            cmd = new MySqlCommand(select, Connection.MySqlConnection);
+            read = cmd.ExecuteReader();
+            if (read.HasRows)
+                while (read.Read())
+                    cboCust_ID.Items.Add(read[0].ToString());
+            Connection.Close();
         }
         public string CUST_ID
         {
@@ -64,6 +83,7 @@ namespace SalesInventory
         private void btnAddCart_Click(object sender, EventArgs e)
         {
             qty = Convert.ToInt16(txtQty.Text);
+
             if(string.IsNullOrWhiteSpace(txt_itemID.Text) || string.IsNullOrWhiteSpace(txtDesc.Text))
             {
                 MessageBox.Show("Please select an item!", "System", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -75,12 +95,17 @@ namespace SalesInventory
                 MessageBox.Show("Please put quantity!", "System", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+            else if (string.IsNullOrWhiteSpace(txtPrc.Text))
+            {
+                MessageBox.Show("Please put price!", "System", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             else
             {
                 string item = txt_itemID.Text;
                 string desc = txtDesc.Text;
-                ClassTransaction ctrans = new ClassTransaction(lvwCart);
-                ctrans.Add(item, qty, desc);
+                decimal prc = Decimal.Parse(txtPrc.Text);
+                ClassPurchaseOrder ctrans = new ClassPurchaseOrder(lvwCart);
+                ctrans.Add(item, qty, desc, prc);
                 ctrans.computeTotal(lblTotal);
                 ctrans.computeItems(lblnumItems);
                 txt_itemID.Text = string.Empty;
@@ -98,7 +123,7 @@ namespace SalesInventory
                 ListViewItem item = lvwItemList.SelectedItems[0];
                 txt_itemID.Text = item.SubItems[0].Text;
                 txtDesc.Text = item.SubItems[1].Text;
-                txtPrc.Text = item.SubItems[2].Text;
+
             }
             else
             {
@@ -113,7 +138,7 @@ namespace SalesInventory
         {
             foreach (ListViewItem lvi in lvwCart.SelectedItems)
                 lvi.Remove();
-            ClassTransaction trans = new ClassTransaction(lvwCart);
+            ClassPurchaseOrder trans = new ClassPurchaseOrder(lvwCart);
             trans.computeTotal(lblTotal);
 
         }
@@ -125,8 +150,21 @@ namespace SalesInventory
 
         private void cboCust_ID_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //frmSample s = new frmSample();
-            //s.ShowDialog(this);
+            if (!Connection.IsOpen)
+                Connection.Open();
+            string select = string.Format("SELECT * from tbl_supplier where supplier_ID = '{0}' ", cboCust_ID.Text);
+            cmd = new MySqlCommand(select, Connection.MySqlConnection);
+            read = cmd.ExecuteReader();
+
+            if (read.HasRows)
+            {
+                while (read.Read())
+                {
+                    txtStoreName.Text = read.GetValue(1).ToString();
+                    txtAddress.Text = read.GetValue(5).ToString();
+                }
+            }
+            Connection.Close();
         }
 
         private void cboCust_ID_Enter(object sender, EventArgs e)
@@ -137,19 +175,51 @@ namespace SalesInventory
 
         private void cboCust_ID_Leave(object sender, EventArgs e)
         {
-            frmSample s = new frmSample();
-            s.Dispose();
+            //frmSample s = new frmSample();
+            //s.Dispose();
         }
 
         private void cboCust_ID_Click(object sender, EventArgs e)
         {
-            frmSample s = new frmSample();
-            s.ShowDialog(this);
+            //frmSample s = new frmSample();
+            //s.ShowDialog(this);
         }
 
         private void btnUp_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void txtPrc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+        (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtQty_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timerQuantity_Tick(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtQty.Text) || int.Parse(txtQty.Text) == 0)
+            {
+                btnAddCart.Enabled = false;
+            }
+            else
+            {
+                btnAddCart.Enabled = true;
+            }
         }
     }
 }

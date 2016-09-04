@@ -20,3 +20,5 @@ C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInvento
 C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmSalesTrans.resources
 C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmInquiry.resources
 C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmUpdateItems.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmSample.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmSalesOrder.resources

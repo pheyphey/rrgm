@@ -55,7 +55,9 @@
     </Compile>
     <Compile Include="ClassFM_Items.cs" />
     <Compile Include="ClassListView.cs" />
+    <Compile Include="ClassPurchaseOrder.cs" />
     <Compile Include="ClassStructItems.cs" />
+    <Compile Include="ClassTransaction.cs" />
     <Compile Include="Connection.cs" />
     <Compile Include="filemaintenacecs.cs">
       <SubType>Form</SubType>
@@ -112,11 +114,23 @@
     <Compile Include="frmProcurement.Designer.cs">
       <DependentUpon>frmProcurement.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSalesOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesOrder.Designer.cs">
+      <DependentUpon>frmSalesOrder.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSalesTrans.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSalesTrans.Designer.cs">
       <DependentUpon>frmSalesTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSample.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSample.Designer.cs">
+      <DependentUpon>frmSample.cs</DependentUpon>
     </Compile>
     <Compile Include="frmUpdateItems.cs">
       <SubType>Form</SubType>
@@ -164,8 +178,14 @@
     <EmbeddedResource Include="frmProcurement.resx">
       <DependentUpon>frmProcurement.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesOrder.resx">
+      <DependentUpon>frmSalesOrder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSalesTrans.resx">
       <DependentUpon>frmSalesTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSample.resx">
+      <DependentUpon>frmSample.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmUpdateItems.resx">
       <DependentUpon>frmUpdateItems.cs</DependentUpon>
@@ -178,6 +198,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="UpdateUser.resx">
       <DependentUpon>UpdateUser.cs</DependentUpon>
@@ -194,6 +215,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery-truck-with-packages-behind.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\full-items-inside-a-shopping-bag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel-supplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\specialist-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-to-cart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll-arrow-to-down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scroll-arrow-to-up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up-scroll-arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning-sign.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

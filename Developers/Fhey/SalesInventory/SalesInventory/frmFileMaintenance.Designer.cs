@@ -30,6 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFileMaintenance));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btnTruck = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnSupplier = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.btnItems = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnUser = new System.Windows.Forms.PictureBox();
             this.gbItems = new System.Windows.Forms.GroupBox();
             this.lvwItems = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -50,14 +58,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnEdiitems = new System.Windows.Forms.Button();
             this.btnAddItem = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnTruck = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.btnSupplier = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnItems = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnUser = new System.Windows.Forms.PictureBox();
             this.gbUser = new System.Windows.Forms.GroupBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.cboSearch = new System.Windows.Forms.ComboBox();
@@ -72,11 +72,11 @@
             this.lastname = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.position = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
-            this.gbItems.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnTruck)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSupplier)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUser)).BeginInit();
+            this.gbItems.SuspendLayout();
             this.gbUser.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,6 +97,97 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "File Maintenance";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label4.Location = new System.Drawing.Point(69, 407);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(40, 17);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "Truck";
+            // 
+            // btnTruck
+            // 
+            this.btnTruck.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTruck.Image = ((System.Drawing.Image)(resources.GetObject("btnTruck.Image")));
+            this.btnTruck.Location = new System.Drawing.Point(51, 340);
+            this.btnTruck.Name = "btnTruck";
+            this.btnTruck.Size = new System.Drawing.Size(73, 64);
+            this.btnTruck.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnTruck.TabIndex = 22;
+            this.btnTruck.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label3.Location = new System.Drawing.Point(66, 308);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(58, 17);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Supplier";
+            // 
+            // btnSupplier
+            // 
+            this.btnSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSupplier.Image = ((System.Drawing.Image)(resources.GetObject("btnSupplier.Image")));
+            this.btnSupplier.Location = new System.Drawing.Point(51, 241);
+            this.btnSupplier.Name = "btnSupplier";
+            this.btnSupplier.Size = new System.Drawing.Size(73, 64);
+            this.btnSupplier.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnSupplier.TabIndex = 20;
+            this.btnSupplier.TabStop = false;
+            this.btnSupplier.Click += new System.EventHandler(this.btnSupplier_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label1.Location = new System.Drawing.Point(69, 211);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(42, 17);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Items";
+            // 
+            // btnItems
+            // 
+            this.btnItems.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnItems.Image = ((System.Drawing.Image)(resources.GetObject("btnItems.Image")));
+            this.btnItems.Location = new System.Drawing.Point(51, 144);
+            this.btnItems.Name = "btnItems";
+            this.btnItems.Size = new System.Drawing.Size(73, 64);
+            this.btnItems.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnItems.TabIndex = 17;
+            this.btnItems.TabStop = false;
+            this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.label2.Location = new System.Drawing.Point(69, 114);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(33, 17);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "User";
+            // 
+            // btnUser
+            // 
+            this.btnUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
+            this.btnUser.Location = new System.Drawing.Point(51, 47);
+            this.btnUser.Name = "btnUser";
+            this.btnUser.Size = new System.Drawing.Size(73, 64);
+            this.btnUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnUser.TabIndex = 13;
+            this.btnUser.TabStop = false;
+            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // gbItems
             // 
@@ -249,97 +340,6 @@
             this.btnAddItem.UseVisualStyleBackColor = true;
             this.btnAddItem.Click += new System.EventHandler(this.btnAddItem_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label4.Location = new System.Drawing.Point(69, 407);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(40, 17);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Truck";
-            // 
-            // btnTruck
-            // 
-            this.btnTruck.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTruck.Image = ((System.Drawing.Image)(resources.GetObject("btnTruck.Image")));
-            this.btnTruck.Location = new System.Drawing.Point(51, 340);
-            this.btnTruck.Name = "btnTruck";
-            this.btnTruck.Size = new System.Drawing.Size(73, 64);
-            this.btnTruck.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnTruck.TabIndex = 22;
-            this.btnTruck.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label3.Location = new System.Drawing.Point(66, 308);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 17);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Supplier";
-            // 
-            // btnSupplier
-            // 
-            this.btnSupplier.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSupplier.Image = ((System.Drawing.Image)(resources.GetObject("btnSupplier.Image")));
-            this.btnSupplier.Location = new System.Drawing.Point(51, 241);
-            this.btnSupplier.Name = "btnSupplier";
-            this.btnSupplier.Size = new System.Drawing.Size(73, 64);
-            this.btnSupplier.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnSupplier.TabIndex = 20;
-            this.btnSupplier.TabStop = false;
-            this.btnSupplier.Click += new System.EventHandler(this.btnSupplier_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label1.Location = new System.Drawing.Point(69, 211);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 17);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Items";
-            // 
-            // btnItems
-            // 
-            this.btnItems.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnItems.Image = ((System.Drawing.Image)(resources.GetObject("btnItems.Image")));
-            this.btnItems.Location = new System.Drawing.Point(51, 144);
-            this.btnItems.Name = "btnItems";
-            this.btnItems.Size = new System.Drawing.Size(73, 64);
-            this.btnItems.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnItems.TabIndex = 17;
-            this.btnItems.TabStop = false;
-            this.btnItems.Click += new System.EventHandler(this.btnItems_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label2.Location = new System.Drawing.Point(69, 114);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 17);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "User";
-            // 
-            // btnUser
-            // 
-            this.btnUser.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUser.Image = ((System.Drawing.Image)(resources.GetObject("btnUser.Image")));
-            this.btnUser.Location = new System.Drawing.Point(51, 47);
-            this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(73, 64);
-            this.btnUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnUser.TabIndex = 13;
-            this.btnUser.TabStop = false;
-            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
-            // 
             // gbUser
             // 
             this.gbUser.Controls.Add(this.gbItems);
@@ -473,12 +473,12 @@
             this.Load += new System.EventHandler(this.frmFileMaintenance_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.gbItems.ResumeLayout(false);
-            this.gbItems.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnTruck)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnSupplier)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnItems)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUser)).EndInit();
+            this.gbItems.ResumeLayout(false);
+            this.gbItems.PerformLayout();
             this.gbUser.ResumeLayout(false);
             this.gbUser.PerformLayout();
             this.ResumeLayout(false);

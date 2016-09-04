@@ -1,6 +1,6 @@
 ﻿namespace SalesInventory
 {
-    partial class frmSalesTrans
+    partial class frmSalesOrder
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSalesTrans));
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSalesOrder));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.lvwOrderList = new System.Windows.Forms.ListView();
             this._orderID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -44,6 +45,7 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnAddCart = new System.Windows.Forms.Button();
             this.txtQty = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.txtPrc = new System.Windows.Forms.TextBox();
@@ -58,12 +60,20 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label26 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SO_tab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.cboCust_ID = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblnumItems = new System.Windows.Forms.Label();
+            this.btnDown = new System.Windows.Forms.Button();
+            this.btnUp = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.btnRemoveCart = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -75,8 +85,6 @@
             this._price = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this._subtotal = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.label22 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -85,7 +93,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtStoreName = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -118,15 +126,7 @@
             this.label20 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.btnAddCart = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnDown = new System.Windows.Forms.Button();
-            this.btnUp = new System.Windows.Forms.Button();
-            this.btnRemoveCart = new System.Windows.Forms.Button();
+            this.timerQuantity = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -135,10 +135,10 @@
             this.groupBox3.SuspendLayout();
             this.SO_tab.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -314,6 +314,19 @@
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             // 
+            // btnAddCart
+            // 
+            this.btnAddCart.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCart.Image")));
+            this.btnAddCart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddCart.Location = new System.Drawing.Point(178, 145);
+            this.btnAddCart.Name = "btnAddCart";
+            this.btnAddCart.Size = new System.Drawing.Size(93, 37);
+            this.btnAddCart.TabIndex = 24;
+            this.btnAddCart.Text = "Add to Cart";
+            this.btnAddCart.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddCart.UseVisualStyleBackColor = true;
+            this.btnAddCart.Click += new System.EventHandler(this.btnAddCart_Click);
+            // 
             // txtQty
             // 
             this.txtQty.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -324,6 +337,7 @@
             this.txtQty.TabIndex = 22;
             this.txtQty.Text = "1";
             this.txtQty.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtQty.TextChanged += new System.EventHandler(this.txtQty_TextChanged);
             // 
             // label33
             // 
@@ -338,9 +352,9 @@
             // 
             this.txtPrc.Location = new System.Drawing.Point(106, 71);
             this.txtPrc.Name = "txtPrc";
-            this.txtPrc.ReadOnly = true;
             this.txtPrc.Size = new System.Drawing.Size(165, 20);
             this.txtPrc.TabIndex = 20;
+            this.txtPrc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrc_KeyPress);
             // 
             // label32
             // 
@@ -415,16 +429,17 @@
             // columnHeader6
             // 
             this.columnHeader6.Text = "Item ID";
-            this.columnHeader6.Width = 25;
+            this.columnHeader6.Width = 69;
             // 
             // columnHeader7
             // 
             this.columnHeader7.Text = "Item Description";
-            this.columnHeader7.Width = 218;
+            this.columnHeader7.Width = 124;
             // 
             // columnHeader8
             // 
-            this.columnHeader8.Text = "Price";
+            this.columnHeader8.Text = "Stock on Hand";
+            this.columnHeader8.Width = 94;
             // 
             // label26
             // 
@@ -436,6 +451,59 @@
             this.label26.Size = new System.Drawing.Size(83, 23);
             this.label26.TabIndex = 1;
             this.label26.Text = "Item List";
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(260, 13);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(100, 32);
+            this.button5.TabIndex = 12;
+            this.button5.Text = "Cancel Order";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(155, 13);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(99, 32);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "Print Receipt";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Transparent;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(84, 13);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(65, 32);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Save";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(19, 13);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(59, 32);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "New";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // SO_tab
             // 
@@ -464,7 +532,7 @@
             this.tabPage1.Controls.Add(this.label23);
             this.tabPage1.Controls.Add(this.lvwCart);
             this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.textBox4);
+            this.tabPage1.Controls.Add(this.txtAddress);
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.txtStoreName);
             this.tabPage1.Controls.Add(this.label5);
@@ -489,6 +557,16 @@
             this.cboCust_ID.Enter += new System.EventHandler(this.cboCust_ID_Enter);
             this.cboCust_ID.Leave += new System.EventHandler(this.cboCust_ID_Leave);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SalesInventory.Properties.Resources.warning_sign;
+            this.pictureBox1.Location = new System.Drawing.Point(251, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(19, 22);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 53;
+            this.pictureBox1.TabStop = false;
+            // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
@@ -509,6 +587,25 @@
             this.lblnumItems.TabIndex = 50;
             this.lblnumItems.Text = "0";
             // 
+            // btnDown
+            // 
+            this.btnDown.Image = global::SalesInventory.Properties.Resources.scroll_arrow_to_down;
+            this.btnDown.Location = new System.Drawing.Point(116, 404);
+            this.btnDown.Name = "btnDown";
+            this.btnDown.Size = new System.Drawing.Size(39, 31);
+            this.btnDown.TabIndex = 2;
+            this.btnDown.UseVisualStyleBackColor = true;
+            // 
+            // btnUp
+            // 
+            this.btnUp.Image = global::SalesInventory.Properties.Resources.up_scroll_arrow;
+            this.btnUp.Location = new System.Drawing.Point(71, 404);
+            this.btnUp.Name = "btnUp";
+            this.btnUp.Size = new System.Drawing.Size(39, 31);
+            this.btnUp.TabIndex = 1;
+            this.btnUp.UseVisualStyleBackColor = true;
+            this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -518,6 +615,16 @@
             this.label11.Size = new System.Drawing.Size(141, 20);
             this.label11.TabIndex = 49;
             this.label11.Text = "Number of Item(s):";
+            // 
+            // btnRemoveCart
+            // 
+            this.btnRemoveCart.Image = global::SalesInventory.Properties.Resources.remove;
+            this.btnRemoveCart.Location = new System.Drawing.Point(26, 404);
+            this.btnRemoveCart.Name = "btnRemoveCart";
+            this.btnRemoveCart.Size = new System.Drawing.Size(39, 31);
+            this.btnRemoveCart.TabIndex = 0;
+            this.btnRemoveCart.UseVisualStyleBackColor = true;
+            this.btnRemoveCart.Click += new System.EventHandler(this.btnRemoveCart_Click);
             // 
             // label12
             // 
@@ -588,7 +695,7 @@
             // 
             // _price
             // 
-            this._price.Text = "Unit Price";
+            this._price.Text = "Price";
             this._price.Width = 80;
             // 
             // _subtotal
@@ -598,8 +705,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox4);
-            this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.dateTimePicker2);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
             this.groupBox1.Controls.Add(this.textBox8);
@@ -613,23 +718,6 @@
             this.groupBox1.Size = new System.Drawing.Size(191, 138);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
-            // 
-            // comboBox4
-            // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(75, 112);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(110, 21);
-            this.comboBox4.TabIndex = 19;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(11, 112);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(52, 13);
-            this.label22.TabIndex = 18;
-            this.label22.Text = "Truck ID:";
             // 
             // dateTimePicker2
             // 
@@ -691,20 +779,20 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(16, 13);
+            this.label7.Location = new System.Drawing.Point(26, 14);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 13);
+            this.label7.Size = new System.Drawing.Size(32, 13);
             this.label7.TabIndex = 4;
-            this.label7.Text = "Order#:";
+            this.label7.Text = "PO#:";
             this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
-            // textBox4
+            // txtAddress
             // 
-            this.textBox4.Location = new System.Drawing.Point(80, 64);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(165, 51);
-            this.textBox4.TabIndex = 8;
+            this.txtAddress.Location = new System.Drawing.Point(80, 64);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(165, 51);
+            this.txtAddress.TabIndex = 8;
             // 
             // label6
             // 
@@ -737,9 +825,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 13);
+            this.label4.Size = new System.Drawing.Size(62, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Customer ID:";
+            this.label4.Text = "Supplier ID:";
             // 
             // Payment
             // 
@@ -986,119 +1074,18 @@
             this.label21.TabIndex = 13;
             this.label21.Text = "Customer ID:";
             // 
-            // btnAddCart
+            // timerQuantity
             // 
-            this.btnAddCart.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCart.Image")));
-            this.btnAddCart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddCart.Location = new System.Drawing.Point(178, 145);
-            this.btnAddCart.Name = "btnAddCart";
-            this.btnAddCart.Size = new System.Drawing.Size(93, 37);
-            this.btnAddCart.TabIndex = 24;
-            this.btnAddCart.Text = "Add to Cart";
-            this.btnAddCart.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAddCart.UseVisualStyleBackColor = true;
-            this.btnAddCart.Click += new System.EventHandler(this.btnAddCart_Click);
+            this.timerQuantity.Tick += new System.EventHandler(this.timerQuantity_Tick);
             // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(260, 13);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 32);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Cancel Order";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(155, 13);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(99, 32);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Print Receipt";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(84, 13);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(65, 32);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Save";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(19, 13);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(59, 32);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "New";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SalesInventory.Properties.Resources.warning_sign;
-            this.pictureBox1.Location = new System.Drawing.Point(251, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(19, 22);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 53;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnDown
-            // 
-            this.btnDown.Image = global::SalesInventory.Properties.Resources.scroll_arrow_to_down;
-            this.btnDown.Location = new System.Drawing.Point(116, 404);
-            this.btnDown.Name = "btnDown";
-            this.btnDown.Size = new System.Drawing.Size(39, 31);
-            this.btnDown.TabIndex = 2;
-            this.btnDown.UseVisualStyleBackColor = true;
-            // 
-            // btnUp
-            // 
-            this.btnUp.Image = global::SalesInventory.Properties.Resources.up_scroll_arrow;
-            this.btnUp.Location = new System.Drawing.Point(71, 404);
-            this.btnUp.Name = "btnUp";
-            this.btnUp.Size = new System.Drawing.Size(39, 31);
-            this.btnUp.TabIndex = 1;
-            this.btnUp.UseVisualStyleBackColor = true;
-            this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
-            // 
-            // btnRemoveCart
-            // 
-            this.btnRemoveCart.Image = global::SalesInventory.Properties.Resources.remove;
-            this.btnRemoveCart.Location = new System.Drawing.Point(26, 404);
-            this.btnRemoveCart.Name = "btnRemoveCart";
-            this.btnRemoveCart.Size = new System.Drawing.Size(39, 31);
-            this.btnRemoveCart.TabIndex = 0;
-            this.btnRemoveCart.UseVisualStyleBackColor = true;
-            this.btnRemoveCart.Click += new System.EventHandler(this.btnRemoveCart_Click);
-            // 
-            // frmSalesTrans
+            // frmSalesOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1362, 701);
             this.Controls.Add(this.splitContainer1);
-            this.Name = "frmSalesTrans";
-            this.Text = "frmSalesTrans";
+            this.Name = "frmSalesOrder";
+            this.Text = "Purchase Order";
             this.Load += new System.EventHandler(this.frmSalesTrans_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
@@ -1112,13 +1099,13 @@
             this.SO_tab.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1141,7 +1128,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtStoreName;
         private System.Windows.Forms.Label label5;
@@ -1219,9 +1206,8 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ComboBox cboCust_ID;
         private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Label label22;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Timer timerQuantity;
     }
 }

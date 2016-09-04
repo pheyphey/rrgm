@@ -79,5 +79,81 @@ namespace SalesInventory
             Connection.Close();
 
         }
+
+        public void lvwTransaction_Items(ListView listview)
+        {
+            //lvwUserList.Items.Clear();
+            if (!Connection.IsOpen)
+                Connection.Open();
+            string select = string.Format("SELECT * from tbl_inventory");
+            cmd = new MySqlCommand(select, Connection.MySqlConnection);
+            read = cmd.ExecuteReader();
+            listview.Items.Clear();
+            if (read.HasRows)
+            {
+                while (read.Read())
+                {
+                    ListViewItem item = new ListViewItem(read[0].ToString());
+                    item.SubItems.Add(read.GetValue(1).ToString());
+                    item.SubItems.Add(read.GetValue(2).ToString());
+
+                    listview.Items.Add(item);
+
+                }
+
+            }
+            Connection.Close();
+
+        }
+
+        public void lvwTransaction_Cust(ListView listview)
+        {
+            //lvwUserList.Items.Clear();
+            if (!Connection.IsOpen)
+                Connection.Open();
+            string select = string.Format("SELECT * from tbl_cust");
+            cmd = new MySqlCommand(select, Connection.MySqlConnection);
+            read = cmd.ExecuteReader();
+            listview.Items.Clear();
+            if (read.HasRows)
+            {
+                while (read.Read())
+                {
+                    ListViewItem item = new ListViewItem(read.GetValue(0).ToString());
+                    item.SubItems.Add(read.GetValue(1).ToString());
+
+                    listview.Items.Add(item);
+
+                }
+
+            }
+            Connection.Close();
+
+        }
+        public void lvwItemPO(ListView listview)
+        {
+            //lvwUserList.Items.Clear();
+            if (!Connection.IsOpen)
+                Connection.Open();
+            string select = string.Format("SELECT * from tbl_inventory");
+            cmd = new MySqlCommand(select, Connection.MySqlConnection);
+            read = cmd.ExecuteReader();
+            listview.Items.Clear();
+            if (read.HasRows)
+            {
+                while (read.Read())
+                {
+                    ListViewItem item = new ListViewItem(read.GetValue(0).ToString());
+                    item.SubItems.Add(read.GetValue(1).ToString());
+                    item.SubItems.Add(read.GetValue(9).ToString());
+
+                    listview.Items.Add(item);
+
+                }
+
+            }
+            Connection.Close();
+
+        }
     }
 }
