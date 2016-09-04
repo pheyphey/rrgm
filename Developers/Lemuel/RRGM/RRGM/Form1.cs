@@ -41,7 +41,7 @@ namespace RRGM
 
         private void pictureBox11_MouseLeave(object sender, EventArgs e)
         {
-            pictureBox11.BackColor = Color.Transparent;
+            //pictureBox11.BackColor = Color.Transparent;
         }
 
         private void pictureBox12_MouseLeave(object sender, EventArgs e)
@@ -89,7 +89,7 @@ namespace RRGM
 
         private void pictureBox11_MouseEnter(object sender, EventArgs e)
         {
-            pictureBox11.BackColor = Color.LightGray;
+            //pictureBox11.BackColor = Color.LightGray;
         }
 
         private void pictureBox12_MouseEnter(object sender, EventArgs e)

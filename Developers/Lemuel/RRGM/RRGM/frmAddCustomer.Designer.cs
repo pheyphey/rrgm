@@ -54,29 +54,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtCreditStatus = new System.Windows.Forms.TextBox();
-            this.txtOpeningBalance = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.txtCreditLimit = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.txtSaleDiscount = new System.Windows.Forms.TextBox();
-            this.txtBankAccountNum = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.txtsalesman = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txtPaymentMethod = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtPaymentTerm = new System.Windows.Forms.ComboBox();
-            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // timer1
@@ -167,9 +146,9 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.txtAddress);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(128, 112);
+            this.groupBox1.Location = new System.Drawing.Point(271, 109);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(348, 371);
+            this.groupBox1.Size = new System.Drawing.Size(428, 371);
             this.groupBox1.TabIndex = 46;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "General";
@@ -190,7 +169,7 @@
             this.txtCustID.Location = new System.Drawing.Point(130, 30);
             this.txtCustID.Name = "txtCustID";
             this.txtCustID.ReadOnly = true;
-            this.txtCustID.Size = new System.Drawing.Size(95, 24);
+            this.txtCustID.Size = new System.Drawing.Size(119, 24);
             this.txtCustID.TabIndex = 38;
             // 
             // txtStorename
@@ -198,7 +177,7 @@
             this.txtStorename.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtStorename.Location = new System.Drawing.Point(129, 63);
             this.txtStorename.Name = "txtStorename";
-            this.txtStorename.Size = new System.Drawing.Size(184, 24);
+            this.txtStorename.Size = new System.Drawing.Size(275, 24);
             this.txtStorename.TabIndex = 21;
             // 
             // label2
@@ -216,7 +195,7 @@
             this.txtemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtemail.Location = new System.Drawing.Point(129, 302);
             this.txtemail.Name = "txtemail";
-            this.txtemail.Size = new System.Drawing.Size(184, 24);
+            this.txtemail.Size = new System.Drawing.Size(275, 24);
             this.txtemail.TabIndex = 37;
             // 
             // label3
@@ -244,7 +223,7 @@
             this.txtLastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastname.Location = new System.Drawing.Point(129, 93);
             this.txtLastname.Name = "txtLastname";
-            this.txtLastname.Size = new System.Drawing.Size(184, 24);
+            this.txtLastname.Size = new System.Drawing.Size(275, 24);
             this.txtLastname.TabIndex = 23;
             // 
             // txtFax
@@ -252,7 +231,7 @@
             this.txtFax.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFax.Location = new System.Drawing.Point(129, 272);
             this.txtFax.Name = "txtFax";
-            this.txtFax.Size = new System.Drawing.Size(184, 24);
+            this.txtFax.Size = new System.Drawing.Size(275, 24);
             this.txtFax.TabIndex = 35;
             // 
             // label4
@@ -280,7 +259,7 @@
             this.txtFirstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstname.Location = new System.Drawing.Point(129, 123);
             this.txtFirstname.Name = "txtFirstname";
-            this.txtFirstname.Size = new System.Drawing.Size(183, 24);
+            this.txtFirstname.Size = new System.Drawing.Size(274, 24);
             this.txtFirstname.TabIndex = 25;
             // 
             // label5
@@ -298,7 +277,7 @@
             this.txtMiddlename.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMiddlename.Location = new System.Drawing.Point(130, 153);
             this.txtMiddlename.Name = "txtMiddlename";
-            this.txtMiddlename.Size = new System.Drawing.Size(183, 24);
+            this.txtMiddlename.Size = new System.Drawing.Size(274, 24);
             this.txtMiddlename.TabIndex = 27;
             // 
             // txttele1
@@ -306,7 +285,7 @@
             this.txttele1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttele1.Location = new System.Drawing.Point(129, 242);
             this.txttele1.Name = "txttele1";
-            this.txttele1.Size = new System.Drawing.Size(184, 24);
+            this.txttele1.Size = new System.Drawing.Size(275, 24);
             this.txttele1.TabIndex = 31;
             this.txttele1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txttele1_KeyPress);
             // 
@@ -336,234 +315,14 @@
             this.txtAddress.Location = new System.Drawing.Point(129, 183);
             this.txtAddress.Multiline = true;
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(183, 53);
+            this.txtAddress.Size = new System.Drawing.Size(274, 53);
             this.txtAddress.TabIndex = 29;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label23);
-            this.groupBox2.Controls.Add(this.label22);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.txtCreditStatus);
-            this.groupBox2.Controls.Add(this.txtOpeningBalance);
-            this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Controls.Add(this.txtCreditLimit);
-            this.groupBox2.Controls.Add(this.label19);
-            this.groupBox2.Controls.Add(this.txtSaleDiscount);
-            this.groupBox2.Controls.Add(this.txtBankAccountNum);
-            this.groupBox2.Controls.Add(this.label17);
-            this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.txtsalesman);
-            this.groupBox2.Controls.Add(this.label16);
-            this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.txtPaymentMethod);
-            this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.txtPaymentTerm);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(482, 112);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(369, 371);
-            this.groupBox2.TabIndex = 47;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Selling Information";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.BackColor = System.Drawing.Color.Transparent;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(162, 283);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(18, 18);
-            this.label23.TabIndex = 46;
-            this.label23.Text = "₱";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(162, 223);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(18, 18);
-            this.label22.TabIndex = 45;
-            this.label22.Text = "₱";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(162, 253);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(18, 18);
-            this.label9.TabIndex = 44;
-            this.label9.Text = "₱";
-            // 
-            // txtCreditStatus
-            // 
-            this.txtCreditStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCreditStatus.Location = new System.Drawing.Point(183, 280);
-            this.txtCreditStatus.Name = "txtCreditStatus";
-            this.txtCreditStatus.Size = new System.Drawing.Size(143, 24);
-            this.txtCreditStatus.TabIndex = 40;
-            this.txtCreditStatus.Text = "0.00";
-            this.txtCreditStatus.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtOpeningBalance
-            // 
-            this.txtOpeningBalance.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtOpeningBalance.Location = new System.Drawing.Point(183, 250);
-            this.txtOpeningBalance.Name = "txtOpeningBalance";
-            this.txtOpeningBalance.Size = new System.Drawing.Size(143, 24);
-            this.txtOpeningBalance.TabIndex = 43;
-            this.txtOpeningBalance.Text = "0.00";
-            this.txtOpeningBalance.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtOpeningBalance.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtOpeningBalance_KeyPress);
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(36, 253);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(120, 18);
-            this.label20.TabIndex = 42;
-            this.label20.Text = "Opening Balance";
-            // 
-            // txtCreditLimit
-            // 
-            this.txtCreditLimit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCreditLimit.Location = new System.Drawing.Point(183, 220);
-            this.txtCreditLimit.Name = "txtCreditLimit";
-            this.txtCreditLimit.Size = new System.Drawing.Size(143, 24);
-            this.txtCreditLimit.TabIndex = 41;
-            this.txtCreditLimit.Text = "0.00";
-            this.txtCreditLimit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.txtCreditLimit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCreditLimit_KeyPress);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(74, 223);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(82, 18);
-            this.label19.TabIndex = 40;
-            this.label19.Text = "Credit Limit";
-            // 
-            // txtSaleDiscount
-            // 
-            this.txtSaleDiscount.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSaleDiscount.Location = new System.Drawing.Point(162, 155);
-            this.txtSaleDiscount.Name = "txtSaleDiscount";
-            this.txtSaleDiscount.Size = new System.Drawing.Size(65, 24);
-            this.txtSaleDiscount.TabIndex = 38;
-            this.txtSaleDiscount.Text = "0.00%";
-            this.txtSaleDiscount.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txtBankAccountNum
-            // 
-            this.txtBankAccountNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBankAccountNum.Location = new System.Drawing.Point(162, 190);
-            this.txtBankAccountNum.Name = "txtBankAccountNum";
-            this.txtBankAccountNum.Size = new System.Drawing.Size(164, 24);
-            this.txtBankAccountNum.TabIndex = 38;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(52, 185);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(104, 36);
-            this.label17.TabIndex = 30;
-            this.label17.Text = "Bank Account \r\n          Number";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(48, 158);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(108, 18);
-            this.label18.TabIndex = 39;
-            this.label18.Text = "Sales Discount";
-            // 
-            // txtsalesman
-            // 
-            this.txtsalesman.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsalesman.FormattingEnabled = true;
-            this.txtsalesman.Location = new System.Drawing.Point(162, 125);
-            this.txtsalesman.Name = "txtsalesman";
-            this.txtsalesman.Size = new System.Drawing.Size(164, 24);
-            this.txtsalesman.TabIndex = 29;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(82, 126);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(74, 18);
-            this.label16.TabIndex = 28;
-            this.label16.Text = "Salesman";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(63, 283);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(93, 18);
-            this.label14.TabIndex = 24;
-            this.label14.Text = "Credit Status";
-            // 
-            // txtPaymentMethod
-            // 
-            this.txtPaymentMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPaymentMethod.FormattingEnabled = true;
-            this.txtPaymentMethod.Location = new System.Drawing.Point(162, 95);
-            this.txtPaymentMethod.Name = "txtPaymentMethod";
-            this.txtPaymentMethod.Size = new System.Drawing.Size(164, 24);
-            this.txtPaymentMethod.TabIndex = 23;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(36, 98);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(120, 18);
-            this.label13.TabIndex = 22;
-            this.label13.Text = "Payment Method";
-            // 
-            // txtPaymentTerm
-            // 
-            this.txtPaymentTerm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPaymentTerm.FormattingEnabled = true;
-            this.txtPaymentTerm.Location = new System.Drawing.Point(162, 67);
-            this.txtPaymentTerm.Name = "txtPaymentTerm";
-            this.txtPaymentTerm.Size = new System.Drawing.Size(164, 24);
-            this.txtPaymentTerm.TabIndex = 21;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(51, 71);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(105, 18);
-            this.label12.TabIndex = 20;
-            this.label12.Text = "Payment Term";
             // 
             // frmAddCustomer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 547);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.groupBox1);
@@ -579,8 +338,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -611,27 +368,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.ComboBox txtPaymentTerm;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox txtPaymentMethod;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txtOpeningBalance;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox txtCreditLimit;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox txtSaleDiscount;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox txtBankAccountNum;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox txtsalesman;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txtCustID;
-        private System.Windows.Forms.TextBox txtCreditStatus;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label9;
     }
 }

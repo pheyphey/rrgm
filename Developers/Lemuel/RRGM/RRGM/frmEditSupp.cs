@@ -86,42 +86,6 @@ namespace RRGM
             set { txtemail.Text = value; }
         }
 
-        public string SALEMAN
-        {
-            set { txtsalesman.Text = value; }
-        }
-
-        public string PAYMENTTERM
-        {
-            set { txtPaymentTerm.Text = value; }
-        }
-
-        public string PAYMENTMETHOD
-        {
-            set { txtPaymentMethod.Text = value; }
-        }
-
-        public string BANKACCOUNT
-        {
-            set { txtBankAccountNum.Text = value; }
-        }
-
-        public string CREDITLIMIT
-        {
-            set { txtCreditLimit.Text = value; }
-        }
-
-        public string OPENBALANCE
-        {
-            set { txtOpeningBalance.Text = value; }
-        }
-
-        public string CURRENTBALANCE
-        {
-            set { txtCreditStatus.Text = value; }
-        }
-
-
         private void btnSave_Click(object sender, EventArgs e)
         {
             structSUPP.SUPPID = txtSuppID.Text;
@@ -133,13 +97,6 @@ namespace RRGM
             structSUPP.PHONE = txttele1.Text;
             structSUPP.FAX = txtFax.Text;
             structSUPP.EMAIL = txtemail.Text;
-            structSUPP.SALEMAN = txtsalesman.Text;
-            structSUPP.PAYMENTTERM = txtPaymentTerm.Text;
-            structSUPP.PAYMENTMETHOD = txtPaymentMethod.Text;
-            structSUPP.BANKACCOUNT = txtBankAccountNum.Text;
-            structSUPP.CREDITLIMIT = txtCreditLimit.Text;
-            structSUPP.OPENBALANCE = txtOpeningBalance.Text;
-            structSUPP.CURRENTBALANCE = txtCreditStatus.Text;
             fmsupp.Update(structSUPP);
 
             lvwrefresh.RefreshUserListView();
@@ -154,7 +111,7 @@ namespace RRGM
                 e.Handled = true;
             }
 
-            // only allow one decimal point
+            
             if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;

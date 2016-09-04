@@ -20,6 +20,7 @@ namespace RRGM
             listview.lvwUser(lvwUser);
             listview.lvwCustomer(lvwCustomer);
             listview.lvwSupplier(lvwSupplier);
+            listview.lvwItems(lvwItemList);
         }
         
         private void frm_FileMaintenance_Load(object sender, EventArgs e)
@@ -162,7 +163,7 @@ namespace RRGM
 
         private void button4_Click(object sender, EventArgs e)
         {
-            frmAddInv addinv = new frmAddInv();
+            frmAddInv addinv = new frmAddInv(this);
             addinv.Show();
         }
 
@@ -177,6 +178,7 @@ namespace RRGM
             listview.lvwUser(lvwUser);
             listview.lvwCustomer(lvwCustomer);
             listview.lvwSupplier(lvwSupplier);
+            listview.lvwItems(lvwItemList);
         }
         private void btnAddUser_Click(object sender, EventArgs e)
         {
@@ -218,13 +220,13 @@ namespace RRGM
                 custedit.PHONE = lvwCustomer.SelectedItems[0].SubItems[6].Text;
                 custedit.FAX = lvwCustomer.SelectedItems[0].SubItems[7].Text;
                 custedit.EMAIL = lvwCustomer.SelectedItems[0].SubItems[8].Text;
-                custedit.SALEMAN = lvwCustomer.SelectedItems[0].SubItems[9].Text;
-                custedit.PAYMENTTERM = lvwCustomer.SelectedItems[0].SubItems[10].Text;
-                custedit.PAYMENTMETHOD = lvwCustomer.SelectedItems[0].SubItems[11].Text;
-                custedit.BANKACCOUNT = lvwCustomer.SelectedItems[0].SubItems[12].Text;
-                custedit.CREDITLIMIT = lvwCustomer.SelectedItems[0].SubItems[13].Text;
-                custedit.OPENBALANCE = lvwCustomer.SelectedItems[0].SubItems[14].Text;
-                custedit.CURRENTBALANCE = lvwCustomer.SelectedItems[0].SubItems[15].Text;
+                //custedit.SALEMAN = lvwCustomer.SelectedItems[0].SubItems[9].Text;
+                //custedit.PAYMENTTERM = lvwCustomer.SelectedItems[0].SubItems[10].Text;
+                //custedit.PAYMENTMETHOD = lvwCustomer.SelectedItems[0].SubItems[11].Text;
+                //custedit.BANKACCOUNT = lvwCustomer.SelectedItems[0].SubItems[12].Text;
+                //custedit.CREDITLIMIT = lvwCustomer.SelectedItems[0].SubItems[13].Text;
+                //custedit.OPENBALANCE = lvwCustomer.SelectedItems[0].SubItems[14].Text;
+                //custedit.CURRENTBALANCE = lvwCustomer.SelectedItems[0].SubItems[15].Text;
                 custedit.Show(this);
             }
             else
@@ -249,13 +251,7 @@ namespace RRGM
                 suppedit.PHONE = lvwSupplier.SelectedItems[0].SubItems[6].Text;
                 suppedit.FAX = lvwSupplier.SelectedItems[0].SubItems[7].Text;
                 suppedit.EMAIL = lvwSupplier.SelectedItems[0].SubItems[8].Text;
-                suppedit.SALEMAN = lvwSupplier.SelectedItems[0].SubItems[9].Text;
-                suppedit.PAYMENTTERM = lvwSupplier.SelectedItems[0].SubItems[10].Text;
-                suppedit.PAYMENTMETHOD = lvwSupplier.SelectedItems[0].SubItems[11].Text;
-                suppedit.BANKACCOUNT = lvwSupplier.SelectedItems[0].SubItems[12].Text;
-                suppedit.CREDITLIMIT = lvwSupplier.SelectedItems[0].SubItems[13].Text;
-                suppedit.OPENBALANCE = lvwSupplier.SelectedItems[0].SubItems[14].Text;
-                suppedit.CURRENTBALANCE = lvwSupplier.SelectedItems[0].SubItems[15].Text;
+                
                 suppedit.Show(this);
             }
             else
@@ -277,6 +273,33 @@ namespace RRGM
         {
             label13.Text = DateTime.Now.ToShortTimeString();
             timer2.Start();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (lvwItemList.SelectedItems.Count != 0)
+            {
+                frmEditInv InvEdit = new frmEditInv(this);
+                InvEdit.id = lvwItemList.SelectedItems[0].Text;
+                InvEdit.DESCRIPTION = lvwItemList.SelectedItems[0].SubItems[1].Text;
+                InvEdit.PRICE = lvwItemList.SelectedItems[0].SubItems[2].Text;
+                InvEdit.LASTUNITCOST = lvwItemList.SelectedItems[0].SubItems[3].Text;
+                InvEdit.ITEMTYPE = lvwItemList.SelectedItems[0].SubItems[4].Text;
+                InvEdit.LOCATION = lvwItemList.SelectedItems[0].SubItems[5].Text;
+                InvEdit.SAFELEVEL = lvwItemList.SelectedItems[0].SubItems[6].Text;
+                InvEdit.CRITICALLEVEL = lvwItemList.SelectedItems[0].SubItems[7].Text;
+                InvEdit.REORDERLEVEL = lvwItemList.SelectedItems[0].SubItems[8].Text;
+                InvEdit.QTYHAND = lvwItemList.SelectedItems[0].SubItems[9].Text;
+                InvEdit.QTYSO = lvwItemList.SelectedItems[0].SubItems[10].Text;
+                InvEdit.QTYPO = lvwItemList.SelectedItems[0].SubItems[11].Text;
+                InvEdit.SUPPLIERID = lvwItemList.SelectedItems[0].SubItems[12].Text;
+
+                InvEdit.Show(this);
+            }
+            else
+            {
+                MessageBox.Show("No Records found.");
+            }
         }
     }
 }
