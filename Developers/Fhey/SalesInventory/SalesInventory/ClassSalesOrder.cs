@@ -20,7 +20,6 @@ namespace SalesInventory
         internal static string _qty = "";
         internal static string _price = "";
 
-
         internal static int GeneratePoID(string column, string table)
         {
             Connection.Open();
