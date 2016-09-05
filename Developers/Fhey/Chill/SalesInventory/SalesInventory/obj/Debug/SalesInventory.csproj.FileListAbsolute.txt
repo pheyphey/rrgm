@@ -1,0 +1,48 @@
+c:\users\jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\bin\Debug\SalesInventory.exe.config
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\bin\Debug\SalesInventory.exe
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\bin\Debug\SalesInventory.pdb
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.csprojResolveAssemblyReference.cache
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmLogin.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmFileMaintenance.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmMainPage.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.Properties.Resources.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.csproj.GenerateResource.Cache
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.exe
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.pdb
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\bin\Debug\MySql.Data.dll
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmAddUser.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmUpdateUser.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.filemaintenacecs.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.AddCust.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmAddInv.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmAddSup.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmProcurement.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmSalesTrans.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmInquiry.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmUpdateItems.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmSample.resources
+C:\Users\Jumbo\documents\visual studio 2015\Projects\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmSalesOrder.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\bin\Debug\SalesInventory.exe.config
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.csprojResolveAssemblyReference.cache
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.AddCust.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.filemaintenacecs.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmLogin.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmAddInv.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmAddSup.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmAddUser.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmFileMaintenance.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmInquiry.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmMainPage.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmProcurement.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmSalesOrder.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmSalesTrans.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmSample.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmUpdateItems.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.Properties.Resources.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.frmUpdateUser.resources
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.csproj.GenerateResource.Cache
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\bin\Debug\SalesInventory.exe
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\bin\Debug\SalesInventory.pdb
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\bin\Debug\MySql.Data.dll
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.exe
+D:\RRGM\Developers\Fhey\SalesInventory\SalesInventory\obj\Debug\SalesInventory.pdb
