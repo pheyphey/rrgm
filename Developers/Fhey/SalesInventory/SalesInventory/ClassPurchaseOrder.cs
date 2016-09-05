@@ -100,7 +100,7 @@ namespace SalesInventory
         {
             if (!Connection.IsOpen)
                 Connection.Open();
-            string select = string.Format("SELECT item_type FROM tbl_inventory where item_ID='{0}' ", prod);
+            string select = string.Format("SELECT item_type FROM tbl_inventory WHERE item_ID='{0}' ", prod);
             cmd = new MySqlCommand(select, Connection.MySqlConnection);
             read = cmd.ExecuteReader();
             if (read.HasRows)
@@ -115,5 +115,8 @@ namespace SalesInventory
             }
             Connection.Close();
         }
+
+
+
     }
 }

@@ -170,8 +170,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.button2);
             this.splitContainer1.Panel2.Controls.Add(this.SO_tab);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(1362, 701);
-            this.splitContainer1.SplitterDistance = 316;
+            this.splitContainer1.Size = new System.Drawing.Size(1354, 701);
+            this.splitContainer1.SplitterDistance = 314;
             this.splitContainer1.TabIndex = 0;
             // 
             // lvwOrderList
@@ -274,7 +274,7 @@
             this.panel1.Controls.Add(this.lvwItemList);
             this.panel1.Controls.Add(this.label26);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(719, 0);
+            this.panel1.Location = new System.Drawing.Point(713, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(323, 701);
             this.panel1.TabIndex = 13;
@@ -1082,7 +1082,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1362, 701);
+            this.ClientSize = new System.Drawing.Size(1354, 701);
             this.Controls.Add(this.splitContainer1);
             this.Name = "frmSalesOrder";
             this.Text = "Purchase Order";

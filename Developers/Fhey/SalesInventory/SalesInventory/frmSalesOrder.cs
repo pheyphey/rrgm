@@ -82,6 +82,8 @@ namespace SalesInventory
 
         private void btnAddCart_Click(object sender, EventArgs e)
         {
+
+
             qty = Convert.ToInt16(txtQty.Text);
 
             if(string.IsNullOrWhiteSpace(txt_itemID.Text) || string.IsNullOrWhiteSpace(txtDesc.Text))

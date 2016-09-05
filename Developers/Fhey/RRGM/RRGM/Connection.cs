@@ -13,8 +13,8 @@ namespace RRGM
     class Connection
     {
         private static MySqlConnection connection;
-        internal static string _username = "root";
-        internal static string _password = "admin";
+        internal static string _username = "chill";
+        internal static string _password = "opendb";
         internal static string _dbname = "dbrrgm";
         internal static string _conn;
 

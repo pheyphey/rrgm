@@ -44,6 +44,7 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnAddCart = new System.Windows.Forms.Button();
             this.txtQty = new System.Windows.Forms.TextBox();
             this.label33 = new System.Windows.Forms.Label();
             this.txtPrc = new System.Windows.Forms.TextBox();
@@ -58,12 +59,20 @@
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label26 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SO_tab = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.cboCust_ID = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.lblnumItems = new System.Windows.Forms.Label();
+            this.btnDown = new System.Windows.Forms.Button();
+            this.btnUp = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.btnRemoveCart = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.textBox12 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
@@ -118,15 +127,6 @@
             this.label20 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.btnAddCart = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnDown = new System.Windows.Forms.Button();
-            this.btnUp = new System.Windows.Forms.Button();
-            this.btnRemoveCart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -135,10 +135,10 @@
             this.groupBox3.SuspendLayout();
             this.SO_tab.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -166,12 +166,12 @@
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
             this.splitContainer1.Panel2.Controls.Add(this.button5);
             this.splitContainer1.Panel2.Controls.Add(this.button4);
-            this.splitContainer1.Panel2.Controls.Add(this.button3);
+            this.splitContainer1.Panel2.Controls.Add(this.btnSave);
             this.splitContainer1.Panel2.Controls.Add(this.button2);
             this.splitContainer1.Panel2.Controls.Add(this.SO_tab);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(1362, 701);
-            this.splitContainer1.SplitterDistance = 316;
+            this.splitContainer1.Size = new System.Drawing.Size(1354, 701);
+            this.splitContainer1.SplitterDistance = 314;
             this.splitContainer1.TabIndex = 0;
             // 
             // lvwOrderList
@@ -274,7 +274,7 @@
             this.panel1.Controls.Add(this.lvwItemList);
             this.panel1.Controls.Add(this.label26);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(719, 0);
+            this.panel1.Location = new System.Drawing.Point(713, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(323, 701);
             this.panel1.TabIndex = 13;
@@ -313,6 +313,19 @@
             this.groupBox3.Size = new System.Drawing.Size(290, 207);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
+            // 
+            // btnAddCart
+            // 
+            this.btnAddCart.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCart.Image")));
+            this.btnAddCart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddCart.Location = new System.Drawing.Point(178, 145);
+            this.btnAddCart.Name = "btnAddCart";
+            this.btnAddCart.Size = new System.Drawing.Size(93, 37);
+            this.btnAddCart.TabIndex = 24;
+            this.btnAddCart.Text = "Add to Cart";
+            this.btnAddCart.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAddCart.UseVisualStyleBackColor = true;
+            this.btnAddCart.Click += new System.EventHandler(this.btnAddCart_Click);
             // 
             // txtQty
             // 
@@ -437,6 +450,60 @@
             this.label26.TabIndex = 1;
             this.label26.Text = "Item List";
             // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.Transparent;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button5.Location = new System.Drawing.Point(260, 13);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(100, 32);
+            this.button5.TabIndex = 12;
+            this.button5.Text = "Cancel Order";
+            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(155, 13);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(99, 32);
+            this.button4.TabIndex = 11;
+            this.button4.Text = "Print Receipt";
+            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // btnSave
+            // 
+            this.btnSave.BackColor = System.Drawing.Color.Transparent;
+            this.btnSave.Image = ((System.Drawing.Image)(resources.GetObject("btnSave.Image")));
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(84, 13);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(65, 32);
+            this.btnSave.TabIndex = 2;
+            this.btnSave.Text = "Save";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(19, 13);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(59, 32);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "New";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // SO_tab
             // 
             this.SO_tab.Alignment = System.Windows.Forms.TabAlignment.Bottom;
@@ -489,6 +556,16 @@
             this.cboCust_ID.Enter += new System.EventHandler(this.cboCust_ID_Enter);
             this.cboCust_ID.Leave += new System.EventHandler(this.cboCust_ID_Leave);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SalesInventory.Properties.Resources.warning_sign;
+            this.pictureBox1.Location = new System.Drawing.Point(251, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(19, 22);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 53;
+            this.pictureBox1.TabStop = false;
+            // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
@@ -509,6 +586,25 @@
             this.lblnumItems.TabIndex = 50;
             this.lblnumItems.Text = "0";
             // 
+            // btnDown
+            // 
+            this.btnDown.Image = global::SalesInventory.Properties.Resources.scroll_arrow_to_down;
+            this.btnDown.Location = new System.Drawing.Point(116, 404);
+            this.btnDown.Name = "btnDown";
+            this.btnDown.Size = new System.Drawing.Size(39, 31);
+            this.btnDown.TabIndex = 2;
+            this.btnDown.UseVisualStyleBackColor = true;
+            // 
+            // btnUp
+            // 
+            this.btnUp.Image = global::SalesInventory.Properties.Resources.up_scroll_arrow;
+            this.btnUp.Location = new System.Drawing.Point(71, 404);
+            this.btnUp.Name = "btnUp";
+            this.btnUp.Size = new System.Drawing.Size(39, 31);
+            this.btnUp.TabIndex = 1;
+            this.btnUp.UseVisualStyleBackColor = true;
+            this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -518,6 +614,16 @@
             this.label11.Size = new System.Drawing.Size(141, 20);
             this.label11.TabIndex = 49;
             this.label11.Text = "Number of Item(s):";
+            // 
+            // btnRemoveCart
+            // 
+            this.btnRemoveCart.Image = global::SalesInventory.Properties.Resources.remove;
+            this.btnRemoveCart.Location = new System.Drawing.Point(26, 404);
+            this.btnRemoveCart.Name = "btnRemoveCart";
+            this.btnRemoveCart.Size = new System.Drawing.Size(39, 31);
+            this.btnRemoveCart.TabIndex = 0;
+            this.btnRemoveCart.UseVisualStyleBackColor = true;
+            this.btnRemoveCart.Click += new System.EventHandler(this.btnRemoveCart_Click);
             // 
             // label12
             // 
@@ -986,116 +1092,11 @@
             this.label21.TabIndex = 13;
             this.label21.Text = "Customer ID:";
             // 
-            // btnAddCart
-            // 
-            this.btnAddCart.Image = ((System.Drawing.Image)(resources.GetObject("btnAddCart.Image")));
-            this.btnAddCart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddCart.Location = new System.Drawing.Point(178, 145);
-            this.btnAddCart.Name = "btnAddCart";
-            this.btnAddCart.Size = new System.Drawing.Size(93, 37);
-            this.btnAddCart.TabIndex = 24;
-            this.btnAddCart.Text = "Add to Cart";
-            this.btnAddCart.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAddCart.UseVisualStyleBackColor = true;
-            this.btnAddCart.Click += new System.EventHandler(this.btnAddCart_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Transparent;
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(260, 13);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 32);
-            this.button5.TabIndex = 12;
-            this.button5.Text = "Cancel Order";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Transparent;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(155, 13);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(99, 32);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Print Receipt";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Transparent;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(84, 13);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(65, 32);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Save";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(19, 13);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(59, 32);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "New";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SalesInventory.Properties.Resources.warning_sign;
-            this.pictureBox1.Location = new System.Drawing.Point(251, 10);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(19, 22);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 53;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnDown
-            // 
-            this.btnDown.Image = global::SalesInventory.Properties.Resources.scroll_arrow_to_down;
-            this.btnDown.Location = new System.Drawing.Point(116, 404);
-            this.btnDown.Name = "btnDown";
-            this.btnDown.Size = new System.Drawing.Size(39, 31);
-            this.btnDown.TabIndex = 2;
-            this.btnDown.UseVisualStyleBackColor = true;
-            // 
-            // btnUp
-            // 
-            this.btnUp.Image = global::SalesInventory.Properties.Resources.up_scroll_arrow;
-            this.btnUp.Location = new System.Drawing.Point(71, 404);
-            this.btnUp.Name = "btnUp";
-            this.btnUp.Size = new System.Drawing.Size(39, 31);
-            this.btnUp.TabIndex = 1;
-            this.btnUp.UseVisualStyleBackColor = true;
-            this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
-            // 
-            // btnRemoveCart
-            // 
-            this.btnRemoveCart.Image = global::SalesInventory.Properties.Resources.remove;
-            this.btnRemoveCart.Location = new System.Drawing.Point(26, 404);
-            this.btnRemoveCart.Name = "btnRemoveCart";
-            this.btnRemoveCart.Size = new System.Drawing.Size(39, 31);
-            this.btnRemoveCart.TabIndex = 0;
-            this.btnRemoveCart.UseVisualStyleBackColor = true;
-            this.btnRemoveCart.Click += new System.EventHandler(this.btnRemoveCart_Click);
-            // 
             // frmSalesTrans
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1362, 701);
+            this.ClientSize = new System.Drawing.Size(1354, 701);
             this.Controls.Add(this.splitContainer1);
             this.Name = "frmSalesTrans";
             this.Text = "frmSalesTrans";
@@ -1112,13 +1113,13 @@
             this.SO_tab.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1152,7 +1153,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ColumnHeader _itemcode;
         private System.Windows.Forms.ColumnHeader _desc;
         private System.Windows.Forms.ColumnHeader _qty;

@@ -33,7 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\STI SUBJECTS\MY SUBJECTS\SOFTWARE ENGINEERING\ROMEL\mysql-connector-net-6.9.5-noinstall\v2.0\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,6 +59,7 @@
     <Compile Include="ClassFM_Items.cs" />
     <Compile Include="ClassListView.cs" />
     <Compile Include="ClassPurchaseOrder.cs" />
+    <Compile Include="ClassSalesOrder.cs" />
     <Compile Include="ClassStructItems.cs" />
     <Compile Include="ClassTransaction.cs" />
     <Compile Include="Connection.cs" />

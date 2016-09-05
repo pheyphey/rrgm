@@ -18,7 +18,7 @@ namespace SalesInventory
         {
             InitializeComponent();
             listview.lvwTransaction_Items(lvwItemList);
-           
+            ClassSalesOrder.DisplaytoLvwCart(lvwCart);
         }
         public string CUST_ID
         {
@@ -64,29 +64,34 @@ namespace SalesInventory
         private void btnAddCart_Click(object sender, EventArgs e)
         {
             qty = Convert.ToInt16(txtQty.Text);
+
             if(string.IsNullOrWhiteSpace(txt_itemID.Text) || string.IsNullOrWhiteSpace(txtDesc.Text))
-            {
                 MessageBox.Show("Please select an item!", "System", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
-            else if (string.IsNullOrWhiteSpace(txtQty.Text) || qty <= 0 )
-            {
-                
+            else if (string.IsNullOrWhiteSpace(txtQty.Text) || qty <= 0 )              
                 MessageBox.Show("Please put quantity!", "System", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            }
             else
             {
-                string item = txt_itemID.Text;
-                string desc = txtDesc.Text;
-                ClassTransaction ctrans = new ClassTransaction(lvwCart);
-                ctrans.Add(item, qty, desc);
-                ctrans.computeTotal(lblTotal);
-                ctrans.computeItems(lblnumItems);
-                txt_itemID.Text = string.Empty;
-                txtDesc.Text = string.Empty;
-                txtPrc.Text = string.Empty;
-                txtQty.Text = "1";
+                ClassSalesOrder.CheckExistingItem(txt_itemID.Text);
+
+                if (ClassSalesOrder._isAddNewItem)
+                    ClassSalesOrder.AddToTemporaryCart(ClassSalesOrder.GeneratePoID("so_cart_id","tbl_cart_so"), txt_itemID.Text, txtDesc.Text, "", int.Parse(txtQty.Text), double.Parse(txtPrc.Text), 1);
+                else
+                    ClassSalesOrder.UpdateExistingItem(txt_itemID.Text, txtQty.Text);
+
+                ClassSalesOrder.DisplaytoLvwCart(lvwCart);
+                ClassSalesOrder.TotalCartItemsAndPrice(lvwCart, lblnumItems, lblTotal);
+
+
+                //string item = txt_itemID.Text;
+                //string desc = txtDesc.Text;
+                //ClassTransaction ctrans = new ClassTransaction(lvwCart);
+                //ctrans.Add(item, qty, desc);
+                //ctrans.computeTotal(lblTotal);
+                //ctrans.computeItems(lblnumItems);
+                //txt_itemID.Text = string.Empty;
+                //txtDesc.Text = string.Empty;
+                //txtPrc.Text = string.Empty;
+                //txtQty.Text = "1";
 
             }
         }
@@ -111,10 +116,10 @@ namespace SalesInventory
 
         private void btnRemoveCart_Click(object sender, EventArgs e)
         {
-            foreach (ListViewItem lvi in lvwCart.SelectedItems)
-                lvi.Remove();
-            ClassTransaction trans = new ClassTransaction(lvwCart);
-            trans.computeTotal(lblTotal);
+            //foreach (ListViewItem lvi in lvwCart.SelectedItems)
+            //    lvi.Remove();
+            //ClassTransaction trans = new ClassTransaction(lvwCart);
+            //trans.computeTotal(lblTotal);
 
         }
 
@@ -150,6 +155,12 @@ namespace SalesInventory
         private void btnUp_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            ClassSalesOrder.UpdatePendingStatusItems();
+            ClassSalesOrder.DisplaytoLvwCart(lvwCart);
         }
     }
 }
